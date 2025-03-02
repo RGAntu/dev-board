@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Board</title>
+    <!-- tailwind and DaisyUI  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+    .poppins{
+      font-family: "Poppins", sans-serif;
+    }
+    .body-color{
+      background-color: #F4F7FF;
+    }
+    </style>
+  </head>
+  <body class="container mx-auto poppins body-color">
+    <header class="drop-shadow-lg rounded-xl bg-base-100 my-5">
+        <nav class="flex py-5 px-5 ">
+          <!-- logo -->
+          <div class="flex flex-1 items-center">
+            <img src="assets/logo.png" alt="logo" class="w-10">
+            <p class="text-2xl font-light ml-3" >Dev<span class="font-medium">Board</span></p>
+          </div>
+
+            
+            <button id="blog-btn" class="btn bg-[#3752FD] text-white">
+              Back to Desk
+            </button>
+          </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="text-center">
+            <h1 class="text-2xl font-bold">Blog</h1>
+        </div>
+        <!-- Question-1 -->
+        <div class=" bg-base-100 rounded-lg  py-2 ">
+            <div class="text-xl font-semibold pl-5 py-5">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="border-b-2 border-dashed border-[#EFEFEF]  w-full"></div>
+            <div class=" text-xl pl-5 py-5">We can select an element with getElementsById,getElementsByClassName, getElementsByTagName, querySelector and querySelectorAll.</div>
+          </div>
+          <!-- Question-2 -->
+        <div class=" bg-base-100 rounded-lg  py-2 ">
+            <div class="text-xl font-semibold pl-5 py-5">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
+            <div class="border-b-2 border-dashed border-[#EFEFEF]  w-full"></div>
+            <div class=" text-xl pl-5 py-5">Using innerHTML can add tag element like h1, div etc. innerText we can add value inside the tag. textContent  get or set the text content. </div>
+          </div>
+          <!-- Question-3 -->
+        <div class=" bg-base-100 rounded-lg  py-2 ">
+            <div class="text-xl font-semibold pl-5 py-5">Question-3: What is event delegation in the DOM?</div>
+            <div class="border-b-2 border-dashed border-[#EFEFEF]  w-full"></div>
+            <div class=" text-xl pl-5 py-5">Event delegation helps to write less code and once we create a function we can use many times.</div>
+          </div>
+          <!-- Question-4 -->
+        <div class=" bg-base-100 rounded-lg  py-2 ">
+            <div class="text-xl font-semibold pl-5 py-5">Question-4: What is event bubbling in the DOM?</div>
+            <div class="border-b-2 border-dashed border-[#EFEFEF]  w-full"></div>
+            <div class=" text-xl pl-5 py-5">Event bubbling find start from document and find the trigger point, when find the trigger point it return the start point</div>
+          </div>
+          <!-- Question-5 -->
+        <div class=" bg-base-100 rounded-lg  py-2 ">
+            <div class="text-xl font-semibold pl-5 py-5">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+            <div class="border-b-2 border-dashed border-[#EFEFEF]  w-full"></div>
+            <div class=" text-xl pl-5 py-5">We can create element using createElement, add using appendChild and remove element using remove.</div>
+          </div>
+          
+    </section>
+
+    <script src="script/discovery.js"></script>
+    <script src="script/back-to.js"></script>
+  </body>
+</html>
