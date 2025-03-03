@@ -9,6 +9,8 @@ const activityLogText =  document.getElementById('activity-log-text')
 
 
 
+
+
 for(const completeBtn of completedButtons){
     completeBtn.addEventListener('click', function(event){
         alert("Board update Successfully");
@@ -24,12 +26,24 @@ for(const completeBtn of completedButtons){
         p.style.marginBottom = " 10px"
         console.log(p)
         activityLogText.appendChild(p);
+
+
+
+        if(remainingTask === 0){
+            alert("congrates!!! You have committed all the current task");
+        }
         
 
     })
 }
 
 
+
+const clearHistoryBtn = document.getElementById('clear-history');
+
+clearHistoryBtn.addEventListener('click', function(){
+    activityLogText.innerHTML = "";
+})
 
 
 
