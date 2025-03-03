@@ -38,7 +38,7 @@ for(const completeBtn of completedButtons){
 }
 
 
-
+// Clear history 
 const clearHistoryBtn = document.getElementById('clear-history');
 
 clearHistoryBtn.addEventListener('click', function(){
@@ -47,6 +47,6 @@ clearHistoryBtn.addEventListener('click', function(){
 
 
 
-
-
+// Date
+document.querySelector('.date').innerText = new Date().toLocaleString();
 
