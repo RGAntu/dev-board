@@ -20,7 +20,7 @@
       font-family: "Poppins", sans-serif;
     }
     .body-color{
-      background-color: #F4F7FF;
+      /* background-color: #F4F7FF; */
       /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
     }
     </style>
@@ -38,16 +38,17 @@
           <div class="flex items-center gap-x-10">
             <div class="flex items-center gap-x-2">
               <img class="w-5 h-5" src="assets/checkbox.png" alt="">
-              <div id="nav-number" class="text-2xl font-bold">23</div>
+              <button id="nav-number" class="text-2xl font-bold">23</button>
             </div>
             
-            <button id="theme-btn">
-              <img class="w-8" src="assets/theme-btn.png" alt="" >
+            <button >
+              <img id="theme-btn" class="w-8" src="assets/theme-btn.png" alt="" >
             </button>
           </div>
         </nav>
     </header>
 
+    <!-- Section  -->
     <section class=" grid grid-cols-3 gap-10 px-5 py-5">
       <!-- left-container -->
        <div class=" col-span-2">
@@ -62,7 +63,7 @@
           <!-- task text  -->
           <div>
             <h1>Task Assigned</h1>
-             <p id="task-counter" class="text-2xl  font-bold">2</p>
+             <p id="task-counter" class="text-2xl  font-bold">6</p>
           </div>
         </div>
         <!-- discovery something   -->
@@ -84,8 +85,9 @@
           </div>
           <!-- task text  -->
           <div>
-            <h1>Fri,</h1>
-             <p id="task-counter" class="">Feb 28 2025 </p>
+            <h1></h1>
+             <!-- <p id="task-counter" class="">Fri, Feb 28 2025 </p> -->
+             <p id="task-counter" class="date"> </p>
           </div>
         </div>
       </div>
@@ -111,7 +113,7 @@
                 </div>
                 <!-- button  -->
                 <div class="">
-                  <button id="btn-completed-1" class="btn bg-[#422AD8] text-white"">Completed</button>
+                  <button id="btn-completed-1" class="completed-btn btn bg-[#422AD8] text-white disabled:bg-gray-400 disabled:text-gray-200">Completed</button>
                 </div>
                </div>
             </div>
@@ -131,7 +133,7 @@
                   </div>
                   <!-- button  -->
                   <div class="">
-                    <button id="btn-completed-2" class="btn bg-[#422AD8] text-white"">Completed</button>
+                    <button id="btn-completed-2" class=" completed-btn btn bg-[#422AD8] text-white disabled:bg-gray-400 disabled:text-gray-200">Completed</button>
                   </div>
                  </div>
               </div>
@@ -151,7 +153,7 @@
                   </div>
                   <!-- button  -->
                   <div class="">
-                    <button id="btn-completed-3" class="btn bg-[#422AD8] text-white"">Completed</button>
+                    <button id="btn-completed-3" class="completed-btn btn bg-[#422AD8] text-white disabled:bg-gray-400 disabled:text-gray-200">Completed</button>
                   </div>
                  </div>
               </div>
@@ -171,7 +173,7 @@
                 </div>
                 <!-- button  -->
                 <div class="">
-                  <button id="btn-completed-4" class="btn bg-[#422AD8] text-white"">Completed</button>
+                  <button id="btn-completed-4" class="completed-btn btn bg-[#422AD8] text-white disabled:bg-gray-400 disabled:text-gray-200">Completed</button>
                 </div>
                </div>
             </div>
@@ -191,7 +193,7 @@
                 </div>
                 <!-- button  -->
                 <div class="">
-                  <button id="btn-completed-5" class="btn bg-[#422AD8] text-white"">Completed</button>
+                  <button id="btn-completed-5" class="completed-btn btn bg-[#422AD8] text-white disabled:bg-gray-400 disabled:text-gray-200">Completed</button>
                 </div>
                </div>
             </div>
@@ -211,7 +213,7 @@
                 </div>
                 <!-- button  -->
                 <div class="">
-                  <button id="btn-completed-6" class="btn bg-[#422AD8] text-white"">Completed</button>
+                  <button id="btn-completed-6" class="completed-btn  btn bg-[#422AD8] text-white disabled:bg-gray-400 disabled:text-gray-200">Completed</button>
                 </div>
                </div>
             </div>
@@ -226,6 +228,7 @@
 
 
        <!-- right container  -->
+        <!-- Activity Log -->
         <div class="col-span-1 ">
           <div class="flex items-center justify-center">
             <!-- icon  -->
@@ -239,9 +242,15 @@
           </div>
           <button id="clear-history" class="btn bg-[#3752FD] text-white my-5 ml-35">Clear History</button>
           <div class="border-b-2 border-dashed border-[#EFEFEF]  w-full"></div>
+          <!-- activity log inside text  -->
+           <div id="activity-log-text" class="bg-gray-400">
+            <!-- <p>hello</p> -->
+           </div>
         </div>
     </section>
-    <!-- <link rel="stylesheet" href="blog.html"> -->
+    
     <script src="script/discovery.js"></script>
+    <script src="script/completed.js"></script>
+    <script src="script/theme-btn.js"></script>
   </body>
 </html>
